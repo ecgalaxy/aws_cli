@@ -6,7 +6,7 @@
   ansible.builtin.get_url:
     url: "{{ awscli_url }}"
     dest: "{{ awscli_download_path }}"
-    mode: 0644
+    mode: 'u=rw,go=r'
   register: downloaded_file
   become: true
 
@@ -27,7 +27,7 @@
   ansible.builtin.get_url:
     url: "{{ awscli_signature_url }}"
     dest: "{{ awscli_download_path }}"
-    mode: 0644
+    mode: 'u=rw,go=r'
   register: downloaded_signature
   become: true
 
@@ -46,7 +46,7 @@
   ansible.builtin.unarchive:
     src: "{{ downloaded_file.dest }}"
     dest: "{{ awscli_download_path }}"
-    remote_src: yes
+    remote_src: true
   register: unarchived_file
   become: true
 

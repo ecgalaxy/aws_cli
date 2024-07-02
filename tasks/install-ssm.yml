@@ -4,7 +4,7 @@
     url: "{{ awscli_ssm_url }}"
     dest: "{{ awscli_download_path }}"
     checksum: "{{ awscli_ssm_checksum }}"
-    mode: 0644
+    mode: 'u=rw,go=r'
   register: downloaded_file
   become: true
 
@@ -12,7 +12,7 @@
   ansible.builtin.yum:
     name: "{{ downloaded_file.dest }}"
     state: present
-    disable_gpg_check: True
+    disable_gpg_check: true
   when: ansible_os_family == 'RedHat'
   become: true
 
