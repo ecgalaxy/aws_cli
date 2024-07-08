@@ -5,4 +5,4 @@ awscli_download_path: /tmp
 
 # Install the optional Session Manager plugin
 awscli_ssm_install: true
-awscli_ssm_version: 1.2.633.0
+awscli_ssm_version: 1.2.650.0
