@@ -1,5 +1,9 @@
 # Releases
 
+## 2.1.x
+
+- Support for Ubuntu 24.04 LTS and RHEL 9 added.
+
 ## 2.0.x
 
 - RHEL 7 support removed.
