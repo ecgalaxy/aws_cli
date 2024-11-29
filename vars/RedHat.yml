@@ -1,4 +1,4 @@
 ---
 # AWS Session Manager Plugin
 awscli_ssm_url: "https://s3.amazonaws.com/session-manager-downloads/plugin/{{ awscli_ssm_version }}/linux_64bit/session-manager-plugin.rpm"
-awscli_ssm_checksum: "sha256:b183ea1207ad4235635dd3820045ea47a5a8c13d5e9d3ffcbae8735447e0a6a6"
+awscli_ssm_checksum: "sha256:aca7bd777d437cb98b5f920cf1b2d4f4f640e7c44b0fbabf7827fd838e0ec974"
