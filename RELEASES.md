@@ -1,5 +1,9 @@
 # Releases
 
+## 2.2.x
+
+- Support for Ubuntu 26.04 LTS added.
+
 ## 2.1.x
 
 - Support for Ubuntu 24.04 LTS and RHEL 9 added.
